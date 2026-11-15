@@ -1,0 +1,216 @@
+﻿/* DataSphere - Estilos generales */
+
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #243247;
+  background-color: #f3f6fa;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button,
+select {
+  font: inherit;
+}
+
+h1, h2, h3, p {
+  margin-top: 0;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* JosÃ© RaÃºl Guerrero Parra */
+/* DiseÃ±o visual del frontend de anÃ¡lisis geogrÃ¡fico */
+
+/* 1. CONTENEDOR PRINCIPAL */
+
+.app {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* 2. CABECERA */
+
+.header {
+  background-color: #17283e;
+  color: #ffffff;
+  padding: 22px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  border-bottom: 4px solid #3294b8;
+}
+
+.header h1 {
+  font-size: 30px;
+  margin-bottom: 6px;
+}
+
+.header p {
+  color: #c8d5e4;
+  margin: 0;
+  font-size: 14px;
+}
+
+.header-author {
+  text-align: right;
+  font-size: 13px;
+}
+
+.header-author span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+/* 3. AREA PRINCIPAL */
+
+main {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 28px 32px;
+}
+
+main > h2 {
+  color: #17283e;
+  font-size: 25px;
+  margin-bottom: 18px;
+}
+
+/* 4. SELECTOR DE PELIGROS */
+
+.hazard-filter {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 18px 0;
+  padding: 18px 20px;
+  background-color: #ffffff;
+  border: 1px solid #e0e6ee;
+  border-radius: 10px;
+}
+
+.hazard-filter label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.hazard-filter select {
+  background-color: #ffffff;
+  color: #243247;
+  border: 1px solid #bac7d6;
+  border-radius: 6px;
+  padding: 9px 12px;
+  min-width: 190px;
+  cursor: pointer;
+}
+
+/* 5. TARJETAS DE ACTIVOS */
+
+.asset-list {
+  background-color: #ffffff;
+  border: 1px solid #e0e6ee;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.asset-list h2,
+.risk-map h2 {
+  font-size: 19px;
+  color: #17283e;
+  margin-bottom: 18px;
+}
+
+.asset-card {
+  background-color: #f8fafc;
+  border: 1px solid #e1e7ef;
+  border-left: 4px solid #3294b8;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 12px;
+}
+
+.asset-card h3 {
+  font-size: 16px;
+  color: #17283e;
+  margin-bottom: 12px;
+}
+
+.asset-card p {
+  font-size: 13px;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+/* 6. MAPA GEOGRAFICO */
+
+.risk-map {
+  background-color: #ffffff;
+  border: 1px solid #e0e6ee;
+  border-radius: 12px;
+  padding: 20px;
+  min-width: 0;
+}
+
+.risk-map > p {
+  font-size: 14px;
+  color: #66758a;
+}
+
+.leaflet-container {
+  width: 100%;
+  border-radius: 8px;
+  z-index: 0;
+}
+
+/* 7. MENSAJES DE ERROR */
+
+[role="alert"] {
+  background-color: #fff0ef;
+  color: #a32c26;
+  border: 1px solid #f2c5c2;
+  border-radius: 8px;
+  padding: 14px;
+}
+
+/* 8. ADAPTACION A PANTALLAS PEQUEÃ‘AS */
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .header-author {
+    text-align: left;
+  }
+
+  main {
+    padding: 18px 12px;
+  }
+
+  .hazard-filter {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hazard-filter select {
+    width: 100%;
+  }
+}
+

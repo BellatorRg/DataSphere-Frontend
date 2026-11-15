@@ -1,0 +1,33 @@
+﻿/* DataSphere - Estilos generales */
+
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #243247;
+  background-color: #f3f6fa;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button,
+select {
+  font: inherit;
+}
+
+h1, h2, h3, p {
+  margin-top: 0;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
