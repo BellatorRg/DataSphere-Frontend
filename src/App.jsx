@@ -7,6 +7,7 @@ import HazardFilter from "./components/HazardFilter";
 import AssetList from "./components/AssetList";
 import { getRiskAssets } from "./services/riskApi";
 import RiskMap from "./components/RiskMap";
+import "./App.css";
 
 function App() {
 
@@ -104,7 +105,7 @@ function App() {
 
             <HazardFilter
               selectedHazard={selectedHazard}
-              onHazardChange={setSelectedHazard}
+              onHazardChange={setSelectedHazard} 
               hazards={hazards}
             />
 

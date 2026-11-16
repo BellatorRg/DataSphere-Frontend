@@ -33,7 +33,6 @@ function RiskMap({ assets }) {
         });
       } else {
         const existing = grouped.get(asset.assetId);
-
         if (!existing.hazards.includes(asset.hazardType)) {
           existing.hazards.push(asset.hazardType);
         }
@@ -70,7 +69,6 @@ function RiskMap({ assets }) {
         />
 
         {/* 4. MARCADORES DE LOS ACTIVOS FILTRADOS */}
-
         {uniqueAssets.map((asset) => (
           <Marker
             key={asset.assetId}
@@ -84,13 +82,10 @@ function RiskMap({ assets }) {
             </Popup>
           </Marker>
         ))}
-
       </MapContainer>
-
       {uniqueAssets.length === 0 && (
         <p>No hay activos geolocalizados para mostrar.</p>
       )}
-
     </section>
   );
 }
